@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <!-- navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -31,7 +31,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#services">SERVICES</a></li>
-          <li><a href="#portfolio">SERVICE AREA</a></li>
+          <li><a href="#service-area">SERVICE AREA</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
@@ -45,7 +45,7 @@
   </div>
 
   <!-- about -->
-  <div class="container-fluid text-center">
+  <div id="about" class="container-fluid text-center">
     <div class="col-sm-8">
       <h2>Trusted and experienced plumbing & heating services</h2>
       <h4>Located in the Toronto area and beyond</h4>
@@ -60,7 +60,7 @@
   </div>
 
   <!-- services -->
-  <div class="container-fluid text-center bg-grey">
+  <div id="services" class="container-fluid text-center bg-grey">
     <h2>Services</h2>
     <h4>What we offer</h4>
     <br>
@@ -89,10 +89,46 @@
         </div>
       </div>
     </div>
+
+    <br>
+    <h2>What our customers say</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h4>"These guys are the best... very knowledgeable and professional at what they do!!"
+            <br>-Eric</h4>
+        </div>
+        <div class="item">
+          <h4>"Alex is very knowledgeable and patient. His crew did a fantastic job on our project."
+            <br>-Rami</h4>
+        </div>
+        <div class="item">
+          <h4>"The quality of work and price surpassed my expectation. Went above and beyond my plumbing needs."
+            <br>-Souriane</h4>
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </div>
 
   <!-- service area -->
-  <div class="container-fluid text-center">
+  <div id="service-area" class="container-fluid text-center">
     <h2>Service Area</h2>
     <h4>We service the following areas in the GTA:</h4>
     Toronto, Scarborough, Oakville, Missisauga, Richmond Hill, Markham, Vaughan, Concord, North York, Etobicoke,
@@ -103,8 +139,7 @@
   </div>
 
   <!-- contact -->
-
-  <div class="container-fluid bg-grey">
+  <div id="contact" class="container-fluid bg-grey">
     <h2 class="text-center">CONTACT</h2>
     <div class="row">
       <div class="col-sm-5">
@@ -132,6 +167,12 @@
     </div>
   </div>
 
+  <!-- footer -->
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
