@@ -11,9 +11,10 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="page" data-spy="scroll" data-target=".navbar" data-offset="60">
   <!-- navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -65,7 +66,7 @@
     <h4>What we offer</h4>
     <br>
 
-    <div class="row text-center">
+    <div class="row text-center slideanim">
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="./imgs/plumbing.jpg" />
@@ -133,15 +134,17 @@
     <h4>We service the following areas in the GTA:</h4>
     Toronto, Scarborough, Oakville, Missisauga, Richmond Hill, Markham, Vaughan, Concord, North York, Etobicoke,
     Toronto Islands, Ajax, Pickering, Oshawa, and more.</p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d299416.784590774!2d-79.70771463279064!3d43.718263867235926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e1!3m2!1sen!2sca!4v1730931987192!5m2!1sen!2sca"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="map">
+      <iframe class="slideanim"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d299416.784590774!2d-79.70771463279064!3d43.718263867235926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e1!3m2!1sen!2sca!4v1730931987192!5m2!1sen!2sca"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
 
   <!-- contact -->
   <div id="contact" class="container-fluid bg-grey">
     <h2 class="text-center">CONTACT</h2>
-    <div class="row">
+    <div class="row slideanim">
       <div class="col-sm-5">
         <p>Contact us and we'll get back to you within 24 hours.</p>
         <p><span class="glyphicon glyphicon-map-marker"></span> Toronto, ON</p>
@@ -167,12 +170,16 @@
     </div>
   </div>
 
+  <!-- links -->
+  
+
   <!-- footer -->
   <footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
+    <a href="#page" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
   </footer>
+  <script src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
