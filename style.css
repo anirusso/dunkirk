@@ -3,8 +3,50 @@ html {
   margin: 0;
 }
 
+h1.title {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 100;
+  font-size: 5rem;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+}
+
 h2 {
-  font-variant: small-caps;
+  font-family: "Commissioner";
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-style: italic;
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .navbar {
@@ -100,6 +142,25 @@ a img {
   visibility: visible;
 }
 
+footer {
+  background-color: black;
+}
+
+footer a i {
+    color: #fff;
+    transition: color 0.3s;
+    font-size: 2.5rem;
+    margin-left: 20px;
+    border: none;
+}
+
+
+footer a:hover i {
+    color: #E1306C;
+}
+
+/* responsive style */
+
 @keyframes slide {
   0% {
     opacity: 0;
@@ -125,5 +186,9 @@ a img {
     .col-sm-4 {
       text-align: center;
       margin: 25px 0;
+    }
+
+    h1.title {
+      font-size: 2em;
     }
   }
