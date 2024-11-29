@@ -216,7 +216,6 @@ footer a:hover i {
   }
 
   span img {
-    width: 30%;
-    height: 30%;
+    display: none;
   }
 }
