@@ -161,23 +161,51 @@
         <p><span class="glyphicon glyphicon-phone"></span> (phone)</p>
         <p><span class="glyphicon glyphicon-envelope"></span> dunkirkplumbing@gmail.com</p>
       </div>
-      <div class="col-sm-7">
-        <div class="row">
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+      <?php if (!empty($message)): ?>
+<div class="alert alert-<?php echo $status === 'success' ? 'success' : 'danger'; ?>" role="alert">
+    <?php echo htmlspecialchars($message); ?>
+</div>
+<?php endif; ?>
+      <form action="contact.php" method="post">
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
           </div>
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+            </div>
           </div>
         </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
-          </div>
-        </div>
+      </form>
+
+      <script>
+              $(document).ready(function() {
+                  $('#contactForm').on('submit', function(event) {
+                      event.preventDefault(); // Prevent the default form submission
+
+                      $.ajax({
+                          url: 'send_email.php', // The PHP script to handle the form submission
+                          type: 'POST',
+                          data: $(this).serialize(), // Serialize the form data
+                          success: function(response) {
+                              $('#responseMessage').html(response); // Display the response message
+                          },
+                          error: function() {
+                              $('#responseMessage').html('An error occurred. Please try again.'); // Handle errors
+                          }
+                      });
+                  });
+              });
+          </script>
+
       </div>
-    </div>
   </div>
 
   <!-- footer -->
