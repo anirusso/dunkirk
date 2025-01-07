@@ -22,6 +22,11 @@ p {
   font-size: 2rem;
 }
 
+p.headinfo {
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
 h1 {
   font-family: "Syne", "Arial", sans-serif;
   letter-spacing: -0.03em;
@@ -33,7 +38,8 @@ h1 {
 
 h2 {
   font-family: "Syne", "Arial", sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -90,7 +96,7 @@ span img {
 
 .navbar {
   margin-bottom: 0;
-  background-color: #272022 !important;
+  background-color: #040505 !important;
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
@@ -107,7 +113,7 @@ span img {
 .navbar-nav li a:hover, .navbar-nav li.active a {
   color: #21a3db !important;
   text-decoration: underline !important;
-  background-color: #272022 !important;
+  background-color: #040505 !important;
 }
 
 .navbar-default .navbar-toggle {
@@ -129,7 +135,7 @@ a img {
 }
 
 .bg-grey {
-  background-color: #191f1f;
+  background-color: #16181c;
 }
 
 .circle-imgs img {
