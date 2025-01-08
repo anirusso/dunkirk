@@ -90,7 +90,7 @@
       </div>
     </div>
 
-    <h2>What our customers say</h2>
+    <h1>What our customers say</h1>
     <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
 
       <ol class="carousel-indicators">
@@ -155,6 +155,9 @@
     </div>
 
 
+<div style="height: 100px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.81 C149.99,149.50 350.86,-49.81 500.01,49.81 L500.01,149.50 L0.00,149.50 Z" style="stroke: none;"></path></svg></div>
+
+
     <h1>OUR SERVICES</h1>
 
     <div class="row text-center slideanim">
@@ -182,10 +185,13 @@
     </div>
   </div>
 
+  <div style="height: 100px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.81 C149.99,149.50 350.86,-49.81 500.01,49.81 L500.01,149.50 L0.00,149.50 Z" style="stroke: none;"></path></svg></div>
+
+
   <div id="service-area" class="container-fluid text-center">
     <div class="col-sm-6">
       <h1>SERVICE AREA</h1>
-      <h2>We service the following areas in the GTA:</h2>
+      <h4>We service the following areas in the GTA:</h4>
       <div class="col-sm-4">
         <h4>North</h4>
         Toronto<br />
@@ -219,9 +225,8 @@
     </div>
     <div class="col-sm-6">
       <div id="map">
-        <iframe class="slideanim"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d299416.784590774!2d-79.70771463279064!3d43.718263867235926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e1!3m2!1sen!2sca!4v1730931987192!5m2!1sen!2sca"
-          width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1194114.0668941!2d-80.61801861338245!3d43.895734127662216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2a1d7471156d%3A0x4ecad8e272e4c2a2!2sGreater%20Toronto%20Area%2C%20ON!5e1!3m2!1sen!2sca!4v1736360696857!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
 
@@ -234,7 +239,7 @@
       <div class="col-sm-5">
         <p>Contact us and we'll get back to you within 24 hours.</p>
         <p><span class="glyphicon glyphicon-map-marker"></span> Toronto, ON</p>
-        <p><span class="glyphicon glyphicon-phone"></span> (phone)</p>
+        <p><span class="glyphicon glyphicon-phone"></span> (647) 403 4203</p>
         <p><span class="glyphicon glyphicon-envelope"></span> dunkirkplumbing@gmail.com</p>
       </div>
 
@@ -248,7 +253,7 @@
               <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
             </div>
           </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="6"></textarea><br>
           <div class="row">
             <div class="col-sm-12 form-group">
               <p id="response-message" style="display:none; color:green; font-weight:bold;">Email sent successfully. Thank you for reaching out!</p>
@@ -268,7 +273,7 @@
           const formData = new FormData(form);
 
           try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbzsOyxkdJZxe1blvHTcSk8g5KwFfCXNhDpPp6yIPk7qIR189Fng8qyK_i9s_Bbgi3CG/exec", {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbzfCTF6GoR7rCCXVaIhcPqQzqLxsuzwev8icTOyQXsLI22nutydLoET5KGMKlAyBbIq/exec", {
               method: "POST",
               body: formData,
             });
