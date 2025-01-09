@@ -176,7 +176,7 @@ a img {
   line-height: 1.375em;
   font-weight: 400;
   font-style: italic;
-  margin: 70px 0;
+  padding: 10%;
 }
 
 .item span {
@@ -235,7 +235,7 @@ footer a:hover i {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .col-sm-4 {
     text-align: center;
     margin: 25px 0;
@@ -251,5 +251,9 @@ footer a:hover i {
 
   p {
     font-size: 1.5rem;
+  }
+
+  .container-fluid {
+    padding: 20px;
   }
 }
